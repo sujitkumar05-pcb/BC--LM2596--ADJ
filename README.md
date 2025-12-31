@@ -1,24 +1,98 @@
 # BC--LM2596--ADJ
-DC-DC switching regulator based on LM2596-ADJ
+## 1. Project Overview
 
-Adjustable output voltage using feedback resistor network
+The BC–LM2596–ADJ project is a DC–DC buck converter based on the LM2596 adjustable regulator, designed to efficiently step down a higher DC voltage to a stable, adjustable lower output. The circuit supports up to 3A output current and is suitable for embedded systems, power electronics, and prototyping applications. The schematic and PCB were designed using KiCad, following standard power PCB layout practices.
 
-Designed and simulated using KiCad
+-----
 
-High efficiency compared to linear regulators
+## 2. Key Learning Objectives
 
-Optimized PCB layout for low ripple and stability
+Understand the working principle of a DC–DC buck (step-down) converter using the LM2596-ADJ.
 
-Supports wide input voltage range (as per datasheet)
+Learn schematic capture, component selection, and value calculation for switching regulators.
 
-Includes schematic, PCB layout, Gerber files, BOM
+Gain hands-on experience in power PCB layout techniques, including high-current routing, grounding, and loop minimization.
 
-Compact and manufacturing-ready design
+Understand the importance of input/output filtering and ripple reduction.
 
-Suitable for embedded, IoT, and power electronics projects
+Apply design rule checks (DRC) and electrical rule checks (ERC) in KiCad.
 
-Ideal for learning, prototyping, and practical applications
+Learn basic thermal considerations for power components.
+
+Develop skills in generating manufacturing outputs such as Gerber, BOM, and pick-and-place files.
+-----
+
+## 3. Tools & Software Used
+- **KiCad EDA**
+  - Schematic Editor  
+  - PCB Layout Editor  
+  - 3D Viewer
+ 
+ ---
+
+## 4. Project Files
+- Schematic design files (`.kicad_sch`)  
+- PCB layout files (`.kicad_pcb`)  
+- 3D render images  
+- Manufacturing-ready Gerber files  
+
+---
+
+## 5. Block-Level Working Explanation
+
+Input Power Block: Receives the DC input voltage and provides initial filtering to reduce noise and transients.
+
+Control & Switching Block (LM2596-ADJ): Regulates the output by high-frequency switching and duty-cycle control based on feedback.
+
+Inductor & Diode Block: Stores and transfers energy during switching cycles to achieve efficient voltage step-down.
+
+Output Filter Block: Smooths the switching waveform using capacitors to provide a stable DC output.
+
+Feedback Network: Uses a resistor divider to set and maintain the desired adjustable output voltage.
+
+## 6. Bill of Materials (BOM)
+
+| Reference | Qty | Value / Part No.    | Footprint                     |
+| --------- | --- | ------------------- | ----------------------------- |
+| **U1**    | 1   | LM2596S-ADJ         | TO-263-5_TabPin3              |
+| **L1**    | 1   | 47 µH               | L_Bourns_SRR1208_12.7×12.7 mm |
+| **D1**    | 1   | SS34 Schottky Diode | D_SMA                         |
+| **D2**    | 1   | LED                 | LED_0603_1608Metric           |
+| **C1**    | 1   | 100 nF              | CP_Elec_8×10                  |
+| **C2**    | 1   | 100 µF              | C_0603_1608Metric             |
+| **C3**    | 1   | 100 nF              | C_0603_1608Metric             |
+| **C4**    | 1   | 220 µF              | CP_Elec_8×10                  |
+| **R1**    | 1   | 47 kΩ               | R_0603_1608Metric             |
+| **R2**    | 1   | 1 kΩ                | R_0603_1608Metric             |
+| **RV1**   | 1   | 10 kΩ Potentiometer | Bourns 3296W (THT)            |
+| **J1–J4** | 4   | 1×1 Pin Header      | PinHeader_1x01_P2.54 mm       |
 
 
 
-A to Z
+## 7. Images & Renders
+
+- **Schematic**
+<img width="1184" height="811" alt="image" src="https://github.com/user-attachments/assets/1a8d36d7-9e15-4381-8568-6bc12f3d6c29" />
+
+
+- **PCB Layout**
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a6f146-5755-47d6-8a8f-e9a6d766c865" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a72df87b-d163-44ae-8c2f-fc700208cdd4" />
+ 
+- **3D View**
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c141d49-0278-48b8-9d21-d018964b9f85" />
+ <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46a6c652-d83d-4956-a634-c980f57c83e9" />
+
+ 
+---
+
+## 8. Disclaimer
+This project is intended for educational and reference purposes only. While the design has been tested at a basic level, it is not certified for commercial or safety-critical applications. Users are responsible for verifying the design, component ratings, and safety requirements before practical deployment.
+---
+
+## 9. Author
+- **Name:** SUJIT KUMAR
+- **Toolchain:** KiCad EDA  
+
+
+
