@@ -80,10 +80,9 @@ Feedback Network: Uses a resistor divider to set and maintain the desired adjust
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a72df87b-d163-44ae-8c2f-fc700208cdd4" />
  
 - **3D View**
- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5c141d49-0278-48b8-9d21-d018964b9f85" />
- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/46a6c652-d83d-4956-a634-c980f57c83e9" />
+<img width="1249" height="725" alt="image" src="https://github.com/user-attachments/assets/e6bdbdfb-e660-406e-8802-f5c029f7c29e" />
+<img width="1114" height="830" alt="image" src="https://github.com/user-attachments/assets/a21908d7-4499-4781-9e9b-be11cc6ff08c" />
 
- 
 ---
 
 ## 8. Disclaimer
