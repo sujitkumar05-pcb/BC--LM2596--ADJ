@@ -2,7 +2,6 @@
 ## 1. Project Overview
 
 The BC–LM2596–ADJ project is a DC–DC buck converter based on the LM2596 adjustable regulator, designed to efficiently step down a higher DC voltage to a stable, adjustable lower output. The circuit supports up to 3A output current and is suitable for embedded systems, power electronics, and prototyping applications. The schematic and PCB were designed using KiCad, following standard power PCB layout practices.
-
 -----
 
 ## 2. Key Learning Objectives
