@@ -72,7 +72,6 @@ Feedback Network: Uses a resistor divider to set and maintain the desired adjust
 
 - **Schematic**
 
-
 - **PCB Layout**
  <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a9a6f146-5755-47d6-8a8f-e9a6d766c865" />
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a72df87b-d163-44ae-8c2f-fc700208cdd4" />
